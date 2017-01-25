@@ -1,9 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 /*
 /   Main.css file for NTU Devsoc's website.
 /
 */
-
-@import "{{ site.theme }}";
 
 * {
     box-sizing: border-box;
