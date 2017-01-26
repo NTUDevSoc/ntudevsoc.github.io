@@ -14,6 +14,14 @@
     box-sizing: border-box;
 }
 
+.center-block {
+    margin: 0 auto;
+}
+
+.center-inline {
+    text-align: center;
+}
+
 body {
     /* TODO: Find a suitable font */
     font-family: "Arial";
@@ -25,7 +33,7 @@ div#header {
     position: relative;
     width: 100%;
     height: 200px;
-    background-color: #154281;
+    background-color: $devBlue;
     background-size: cover;
 }
 
@@ -34,7 +42,7 @@ nav#navbar {
     flex-direction: row;
     align-items: stretch;
     position: relative;
-    background-color: #333;
+    background-color: $darkGrey;
     box-shadow: 0px 0px 10px black;
     z-index: 0;
 }
@@ -44,7 +52,7 @@ div#nav-logo {
     width: 250px;
     z-index: 1;
     order: 0;
-    background-image: url("../img/DevSocWhite.png");
+    background-image: url("../images/DevSocWhite.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -75,10 +83,10 @@ nav#navbar > ul.nav > li.nav-item > a {
     text-decoration: none;
     color: white;
 
-    &:hover { background-color: #444; }
+    &:hover { background-color: lighten($darkGrey, 10%); }
 }
 
-div#header > p#welcome {
+div#header > h1#welcome {
     padding: 10px;
     margin: 0;
     font-size: 1.5em;
@@ -91,20 +99,22 @@ div#header > div#social-media {
     padding: 10px;
     right: 0;
     bottom: 0;
+    background-color: $transpWhite;
 }
 
 div#header > div#social-media > a {
-    background-color: rgba(255, 255, 255, 0.2);
+    // Do later
 }
 
 div.container {
     position: relative;
-    box-shadow: 0px 0px 10px #777;
     z-index: 1;
+    $darkShadow;
 }
 
 div.container p {
     margin: 0;
+    padding: 10px;
 }
 
 div#footer {
