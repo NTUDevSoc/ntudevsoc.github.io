@@ -42,7 +42,7 @@ div#nav-logo {
     width: 250px;
     z-index: 1;
     order: 0;
-    background-image: url("../img/DevSocWhite.png");
+    background-image: url("../images/DevSocWhite.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -83,7 +83,7 @@ nav#navbar > ul.nav > li.nav-item > a {
     color: white;
 }
 
-div#header > p#welcome {
+div#header > h1#welcome {
     padding: 10px;
     margin: 0;
     font-size: 1.5em;
@@ -96,11 +96,15 @@ div#header > div#social-media {
     padding: 10px;
     right: 0;
     bottom: 0;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: $lightGray;
 }
 
-div#header > div#social-media > a {
+/*div#header > div#social-media > a {
     background-color: rgba(255, 255, 255, 0.2);
-}
+}*/
 
 div.container {
     position: relative;
