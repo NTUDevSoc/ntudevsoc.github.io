@@ -10,6 +10,7 @@ $devBlue: #154281;
 $darkerGrey: #222;
 $darkGrey: #333;
 $grey: #666;
+$boxShadow: #777;
 $lightGrey: #eee;
 $transpWhite: rgba(255, 255, 255, 0.5);
 
@@ -18,8 +19,6 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
-// Predefined CSS styles
-$darkShadow: box-shadow: 0px 0px 10px #777;
 
 // Mobile breakpoints
 @mixin mobile {

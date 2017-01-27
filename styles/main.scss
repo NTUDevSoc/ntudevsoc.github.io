@@ -109,7 +109,7 @@ div#header > div#social-media > a {
 div.container {
     position: relative;
     z-index: 1;
-    $darkShadow;
+    box-shadow: 0 0 10px $boxShadow;
 }
 
 div.container p {
