@@ -104,6 +104,11 @@ a.socials:hover {
 
 }
 
+/* Change HR color */
+hr {
+  border: 2px solid black;
+}
+
 
 /* Footer */
 .mastfoot {
