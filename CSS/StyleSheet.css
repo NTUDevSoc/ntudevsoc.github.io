@@ -115,3 +115,23 @@ a:hover {
   font-size: 50px;
 }
 
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  #demo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 160px) {
+  h1 {
+    font-size: 15px;
+  }
+
+  #demo {
+    font-size: 15px;
+  }
+}
