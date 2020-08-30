@@ -37,11 +37,19 @@ body {
 }
 
 
-
 .cover-container {
   max-width: 42em;
 }
 
+/* Social Media Icons */
+.socials {
+  margin: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: grey;
+}
 
 /* Header */
 .masthead {
@@ -106,3 +114,4 @@ body {
 #demo{
   font-size: 50px;
 }
+
