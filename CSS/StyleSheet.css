@@ -48,7 +48,7 @@ body {
 
 a:hover {
   text-decoration: none;
-  color: grey;
+  transform: scale(1.15);
 }
 
 /* Header */
