@@ -2,10 +2,7 @@
 
 html, body {
   height: 100%;
-  
 }
-
-
 
 /* Customise the Navigation Bar */
 .navbar {
@@ -106,4 +103,8 @@ header .overlay {
   text-decoration: none;
   transform: scale(1.15);
   color:#102542;
+}
+
+.card {
+  box-shadow: 0 5px 5px -1px gray;
 }
