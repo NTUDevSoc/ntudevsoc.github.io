@@ -2,7 +2,9 @@
 
 html, body {
   height: 100%;
+  
 }
+
 
 
 /* Customise the Navigation Bar */
@@ -88,11 +90,22 @@ header .overlay {
   }
 }
 
+
 /* Gap Between Rows */
 .top-buffer { 
   margin-top:30px; 
 }
 
-.chat-bubble {
-  background-color: crimson;
+/* Socials */
+.socials {
+  color:#102542;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align: center;
+}
+
+.socials:hover {
+  text-decoration: none;
+  transform: scale(1.15);
+  color:#102542;
 }
