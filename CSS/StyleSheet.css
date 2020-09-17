@@ -77,6 +77,18 @@ header .overlay {
   z-index: 1;
 }
 
+@media (max-width:540px) {
+  .header-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width:300px) {
+  .header-title {
+    font-size: 35px;
+  }
+}
+
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
