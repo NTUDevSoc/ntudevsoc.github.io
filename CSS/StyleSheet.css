@@ -40,7 +40,6 @@ i{
   margin-right: auto;
 }
 
-
 header {
   position: relative;
   background-color: black;
@@ -99,8 +98,7 @@ header .overlay {
 /* Socials */
 .socials {
   color:#102542;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin: 8px;
   text-align: center;
 }
 
