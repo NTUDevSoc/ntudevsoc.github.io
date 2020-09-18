@@ -59,7 +59,7 @@ window.onload = function() {
 /* Warning for closed events */
 $('#warning').click(function (e) {
     e.preventDefault()
-    $('#messageWarning').html('<div class="alert alert-danger fade-in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button><strong>Alert:</strong> This event has ended :( try another one!</div>');
+    $('#messageWarning').html('<div class="alert alert-danger fade-in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button><strong>Alert:</strong> This event has ended. Try another one! :)</div>');
     })
 
 /* Warning for pending events */
