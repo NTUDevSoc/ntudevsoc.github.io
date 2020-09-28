@@ -55,7 +55,7 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-/* 
+ 
 // Countdown Timer
 // Set the date we're counting down to
 var countDownDate = new Date("Sept 28, 2020 09:30:00").getTime();
@@ -76,13 +76,17 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
+  if(document.getElementById("demo")){
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
   }
-}, 1000);*/
+    
+
+}, 1000);
 
