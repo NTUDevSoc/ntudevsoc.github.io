@@ -55,7 +55,7 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-
+/* 
 // Countdown Timer
 // Set the date we're counting down to
 var countDownDate = new Date("Sept 28, 2020 09:30:00").getTime();
@@ -84,5 +84,5 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
-}, 1000);
+}, 1000);*/
 
