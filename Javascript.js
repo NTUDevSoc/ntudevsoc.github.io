@@ -58,6 +58,7 @@ window.onload = function() {
  
 // Countdown Timer
 // Set the date we're counting down to
+// Current not in use
 var countDownDate = new Date("Sept 28, 2020 09:30:00").getTime();
 
 // Update the count down every 1 second
@@ -89,4 +90,16 @@ var x = setInterval(function() {
     
 
 }, 1000);
+
+/* Warning for closed events */
+$('#warning').click(function (e) {
+  e.preventDefault()
+  $('#messageWarning').html('<div class="alert alert-danger fade-in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button><strong>Alert:</strong> This event has ended. Try another one! :)</div>');
+  })
+
+/* Warning for pending events */
+$('#pending').click(function (e) {
+  e.preventDefault()
+  $('#messagePending').html('<div class="alert alert-success fade-in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button><strong>Alert:</strong> Event details are pending. Try again later! :)</div>');
+  })
 
