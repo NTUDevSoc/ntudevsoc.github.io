@@ -135,9 +135,9 @@ header .overlay {
 }
 
 .v-profile {
-  color: #181818;
-  cursor: pointer
+  color: black;
 }
+
 
 .box {
   -webkit-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
