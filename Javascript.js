@@ -107,15 +107,16 @@ $('#pending').click(function (e) {
   function moreFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "Past Events";
+      document.getElementById("myBtn").classList.remove('fa-arrow-up');
+      document.getElementById("myBtn").classList.add('fa-arrow-down');
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Close";
+      document.getElementById("myBtn").classList.remove('fa-arrow-down');
+      document.getElementById("myBtn").classList.add('fa-arrow-up');
       moreText.style.display = "inline";
     }
   } 

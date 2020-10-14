@@ -154,3 +154,7 @@ header .overlay {
 }
 
 #more {display: none;}
+
+.moreButton:hover {
+  color: #5e5e5e;
+}
