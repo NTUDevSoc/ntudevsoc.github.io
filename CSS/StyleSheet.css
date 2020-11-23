@@ -160,3 +160,13 @@ header .overlay {
 .moreButton:hover {
   color: #5e5e5e;
 }
+
+/* Archive Icons */
+/* Socials */
+.archive-icon {
+  color:#102542;
+}
+
+.archive-icon:hover {
+  transform: scale(1.15);
+}
