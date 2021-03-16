@@ -1,0 +1,7 @@
+RewriteEngine on
+# Makes sure the rule does not apply to existing directories
+RewriteCond %{REQUEST_FILENAME} !-d
+# Check for file in directory with .html extension
+RewriteCond %{REQUEST_FILENAME}\.html -f
+# Show the page that has the .html extension, but without the extension
+RewriteRule ^(.*)$ $1.html [NC] # NC = Non-case
