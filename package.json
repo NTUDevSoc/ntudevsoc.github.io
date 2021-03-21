@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "devsoc-web",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "The DevSoc website",
+  "version": "2.0.0",
+  "author": "NTU DevSoc Committee - discord/NTUDevSoc @committee",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/NTUDevSoc/ntudevsoc.github.io/issues"
   },
   "dependencies": {
     "gatsby": "^3.0.1",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://devsoc.co.uk",
   "keywords": [
     "gatsby"
   ],
@@ -43,7 +43,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/NTUDevSoc/ntudevsoc.github.io.git"
   },
   "scripts": {
     "build": "gatsby build",
