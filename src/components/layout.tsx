@@ -1,7 +1,12 @@
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 import { Link } from "gatsby";
 
-const Layout = ({ location, title, children }) => {
+type LayoutProps = {
+  location: Location;
+  title: string;
+}
+
+const Layout: FunctionComponent<LayoutProps> = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
   let header;

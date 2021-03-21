@@ -1,11 +1,22 @@
-import * as React from "react";
-import { Link, graphql } from "gatsby";
+import React, { FunctionComponent } from "react";
+import { Link, graphql, PageProps } from "gatsby";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { MarkdownNode } from "../types/markdown/markdown-node.type";
+import { Site } from "../types/site/site.type";
 
-const BlogPostTemplate = ({ data, location }) => {
+type BlogPostProps = PageProps & {
+  data: { 
+    site: Site;
+    markdownRemark: MarkdownNode;
+    previous: MarkdownNode;
+    next: MarkdownNode;
+  };
+};
+
+const BlogPostTemplate: FunctionComponent<BlogPostProps> = ({ data, location }) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const { previous, next } = data;

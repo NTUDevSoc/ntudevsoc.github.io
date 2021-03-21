@@ -1,10 +1,15 @@
-import * as React from "react";
-import { graphql } from "gatsby";
+import React, { FunctionComponent } from "react";
+import { graphql, PageProps } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { GlobalData } from "../types/global-data/global-data.type";
 
-const NotFoundPage = ({ data, location }) => {
+type NotFoundProps = PageProps & {
+  data: GlobalData;
+};
+
+const NotFoundPage: FunctionComponent<NotFoundProps> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
 
   return (

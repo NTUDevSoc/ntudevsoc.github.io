@@ -1,11 +1,16 @@
-import * as React from "react";
-import { Link, graphql } from "gatsby";
+import React, { FunctionComponent } from "react";
+import { Link, graphql, PageProps } from "gatsby";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { GlobalData } from "../types/global-data/global-data.type";
 
-const BlogIndex = ({ data, location }) => {
+type IndexProps = PageProps & {
+  data: GlobalData;
+};
+
+const BlogIndex: FunctionComponent<IndexProps> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
 

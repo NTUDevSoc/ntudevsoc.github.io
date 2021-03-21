@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `The Developer's Society`,
+    subTitle: `Nottingham Trent University`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `NTU Developer's Society`,
+      summary: `We're the developer's society at Nottingham Trent University, based in MAE124.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `The website for the Nottingham Trent University's Developer's society`,
+    siteUrl: `https://devsoc.co.uk`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `DevSoc`,
     },
   },
   plugins: [
@@ -59,6 +60,7 @@ module.exports = {
             site {
               siteMetadata {
                 title
+                subTitle
                 description
                 siteUrl
                 site_url: siteUrl
