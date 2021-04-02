@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import { Link, graphql, PageProps } from "gatsby";
 
 import Bio from "../components/bio";
-import Layout from "../components/layout";
+import DefaultLayout from "../components/layout/default-layout.component";
 import SEO from "../components/seo";
 import { MarkdownNode } from "../types/markdown/markdown-node.type";
 import { Site } from "../types/site/site.type";
@@ -22,7 +22,7 @@ const BlogPostTemplate: FunctionComponent<BlogPostProps> = ({ data, location }) 
   const { previous, next } = data;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <DefaultLayout title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -71,7 +71,7 @@ const BlogPostTemplate: FunctionComponent<BlogPostProps> = ({ data, location }) 
           </li>
         </ul>
       </nav>
-    </Layout>
+    </DefaultLayout>
   );
 };
 

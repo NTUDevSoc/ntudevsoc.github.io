@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { graphql, PageProps } from "gatsby";
 
-import Layout from "../components/layout";
+import DefaultLayout from "../components/layout/default-layout.component";
 import SEO from "../components/seo";
 import { GlobalData } from "../types/global-data/global-data.type";
 
@@ -9,15 +9,15 @@ type NotFoundProps = PageProps & {
   data: GlobalData;
 };
 
-const NotFoundPage: FunctionComponent<NotFoundProps> = ({ data, location }) => {
+const NotFoundPage: FunctionComponent<NotFoundProps> = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <DefaultLayout title={siteTitle}>
       <SEO title="404: Not Found" />
       <h1>404: Not Found</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Layout>
+    </DefaultLayout>
   );
 };
 
