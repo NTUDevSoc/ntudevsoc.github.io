@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from "react";
 import { Link, graphql, PageProps } from "gatsby";
 
-import Bio from "../components/bio";
-import DefaultLayout from "../components/layout/default-layout.component";
-import SEO from "../components/seo";
+import { Bio } from "../components/blog/bio.component";
+import { DefaultLayout } from "../components/layout/default-layout.component";
+import { SEO } from "../components/shared/seo.component";
 import { MarkdownNode } from "../types/markdown/markdown-node.type";
 import { Site } from "../types/site/site.type";
 
 type BlogPostProps = PageProps & {
-  data: { 
+  data: {
     site: Site;
     markdownRemark: MarkdownNode;
     previous: MarkdownNode;
@@ -16,7 +16,7 @@ type BlogPostProps = PageProps & {
   };
 };
 
-const BlogPostTemplate: FunctionComponent<BlogPostProps> = ({ data, location }) => {
+const BlogPostTemplate: FunctionComponent<BlogPostProps> = ({ data }) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const { previous, next } = data;

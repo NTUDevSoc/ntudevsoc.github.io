@@ -1,0 +1,17 @@
+{
+    "colours": {
+        "primary": "#102542",
+        "secondary": "#FFFFFF",
+        "grey": {
+            "light": "#444",
+            "default": "#666",
+            "dark": "#888"
+        }
+    },
+    "spacing": {
+        "default": "1rem"
+    },
+    "borders": {
+        "size": "0.25rem"
+    }
+}

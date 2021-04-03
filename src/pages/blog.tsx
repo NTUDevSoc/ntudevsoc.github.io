@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
 import { Link, graphql, PageProps } from "gatsby";
-
-import Bio from "../components/bio";
-import DefaultLayout from "../components/layout/default-layout.component";
-import SEO from "../components/seo";
+import { Bio } from "../components/blog/bio.component";
+import { DefaultLayout } from "../components/layout/default-layout.component";
+import { SEO } from "../components/shared/seo.component";
 import { GlobalData } from "../types/global-data/global-data.type";
+
 
 type IndexProps = PageProps & {
   data: GlobalData;
@@ -29,7 +29,7 @@ const BlogIndex: FunctionComponent<IndexProps> = ({ data, location }) => {
   }
 
   return (
-    <DefaultLayout location={location} title={siteTitle}>
+    <DefaultLayout title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
       <ol style={{ listStyle: `none` }}>
@@ -45,7 +45,7 @@ const BlogIndex: FunctionComponent<IndexProps> = ({ data, location }) => {
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
+                    <Link to={`.${post.fields.slug}`} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>

@@ -1,18 +1,24 @@
 import React, { FunctionComponent } from "react";
-import { Link } from "gatsby";
+import styled from "styled-components";
 import { Footer } from "./footer.component";
 import { Header } from "./header.component";
 
 type LayoutProps = {
   title: string;
-}
+};
 
-export const DefaultLayout: FunctionComponent<LayoutProps> = ({ title, children }) => {
+const Root = styled.div({
+  fontFamily: "'Open Sans', sans-serif"
+});
+
+export const DefaultLayout: FunctionComponent<LayoutProps> = ({
+  children,
+}) => {
   return (
-    <div className="global-wrapper">
+    <Root>
       <Header />
       <main>{children}</main>
       <Footer />
-    </div>
+    </Root>
   );
 };
