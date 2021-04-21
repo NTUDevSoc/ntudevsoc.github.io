@@ -1,59 +1,49 @@
 // [}EVSOC_ logo on index.html animation 
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
+const codeStrings = [
+  `[}EVSOC_`,
+  `Code`,
+  `Chat`,
+  `Game`,
+]
 
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
+async function initRotate(spanElement, period, strings = codeStrings) {
+  while(true) {
+      for (string of strings) {
+          let viewedStr = ""
 
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-    }
-
-    setTimeout(function() {
-    that.tick();
-    }, delta);
-};
+          // Repeatedly add a char onto the displayed string
+          for (char of string.split("")) {
+              viewedStr += char
+              spanElement.innerHTML = `<span class="wrap">${viewedStr}<span>`;
+              await sleep(200 - Math.random() * 100);
+          }
+          
+          await sleep(period);
+          
+          // Repeatedly "delete" the rightmost char
+          for (let i = string.length; i > 0; i--) { 
+              spanElement.innerHTML = `<span class="wrap">${string.substring(0, i)}<span>`;
+              await sleep(100 - Math.random() * 50);
+          }
+      }
+  }
+}
 
 window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
+  for (element of document.getElementsByClassName('typewrite')) {
+    var period = element.getAttribute('data-period');
+    initRotate(element, period);
+  }
+  
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  document.body.appendChild(css);
 };
 
 
