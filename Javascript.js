@@ -1,9 +1,10 @@
 // [}EVSOC_ logo on index.html animation 
 const codeStrings = [
-  `[}EVSOC_`,
-  `Code`,
-  `Chat`,
-  `Game`,
+  `[}EVCORP_`,
+  `Steal`,
+  `Anarchise`,
+  `Bean Up`,
+  `Racoonise`
 ]
 
 function sleep(ms) {
