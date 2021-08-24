@@ -3,8 +3,14 @@ const codeStrings = [
   `[}EVCORP_`,
   `Steal`,
   `Anarchise`,
-  `Bean Up`,
-  `Racoonise`
+  `Bean`
+]
+
+const hexdress = [
+  'B2',
+  '8E',
+  '01',
+  '03'
 ]
 
 function sleep(ms) {
@@ -34,6 +40,15 @@ async function initRotate(spanElement, period, strings = codeStrings) {
   }
 }
 
+function parseConnections(hexdresses) {
+  var output = "";
+  for (let i = 0; i < hexdresses.length; i++) {
+    output += (parseInt(hexdresses[i], 16) + ".");
+  }
+  output = output.slice(0, -1);
+  return output;
+}
+
 window.onload = function() {
   for (element of document.getElementsByClassName('typewrite')) {
     var period = element.getAttribute('data-period');
@@ -45,6 +60,10 @@ window.onload = function() {
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
+
+  // OUTPUT TRACED IP
+  var out = parseConnections(hexdress);
+  console.log("LAST CONNECTION TRACE IPv4: " + out);
 };
 
 
@@ -52,10 +71,10 @@ window.onload = function() {
 $('#warning').click(function (e) {
   e.preventDefault()
   $('#messageWarning').html('<div class="alert alert-danger fade-in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button><strong>Alert:</strong> This event has ended. Try another one! :)</div>');
-  })
+})
 
 // Warning for pending events 
 $('#pending').click(function (e) {
   e.preventDefault()
   $('#messagePending').html('<div class="alert alert-success fade-in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button><strong>Alert:</strong> Event details are pending. Try again later! :)</div>');
-  })
+})
