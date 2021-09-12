@@ -3,7 +3,7 @@ const codeStrings = [
   `[}EVCORP_`,
   `Steal`,
   `Anarchise`,
-  `Bean`
+  `Conquer`
 ]
 
 const hexdress = [
@@ -63,9 +63,8 @@ window.onload = function() {
 
   // OUTPUT TRACED IP
   var out = parseConnections(hexdress);
-  console.log("LAST CONNECTION TRACE IPv4: " + out);
+  console.log("LAST CONNECTION TRACE IPv4: DEV{" + out + "}");
 };
-
 
 // Warning for closed events 
 $('#warning').click(function (e) {
