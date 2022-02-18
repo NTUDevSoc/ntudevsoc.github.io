@@ -12,3 +12,7 @@ export const VideoSection = styled.div({
     position: "relative",
     overflow: "hidden"
 })
+
+export const ContentSection = styled.div({
+    margin: "1rem"
+})

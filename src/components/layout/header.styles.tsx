@@ -9,6 +9,7 @@ export const Navbar = styled.nav({
   alignItems: "center",
   justifyContent: "center",
   backgroundColor: theme.colours.primary,
+  height: "3.5rem"
 });
 
 export const NavLink = styled(props => <Link {...props} />)({

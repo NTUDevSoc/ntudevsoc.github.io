@@ -1,7 +1,10 @@
 import React, { FunctionComponent } from "react";
 import { Link, graphql, PageProps } from "gatsby";
 import { DefaultLayout } from "../components/layout/default-layout.component";
-import { BackgroundVideo, VideoSection } from "../index.styles";
+import { BackgroundVideo, ContentSection, VideoSection } from "../index.styles";
+import { CenteredTitle } from "../components/shared/shared.styles";
+
+import WelcomeVideoMp4 from "../assets/welcome-page-video.mp4"
 
 type IndexProps = PageProps;
 
@@ -10,14 +13,16 @@ const Index: FunctionComponent<IndexProps> = () => {
     <DefaultLayout title="NTU DevSoc - Home">
       <VideoSection>
         <BackgroundVideo
-          src="../assets/welcome-page-video.mp4"
+          src={WelcomeVideoMp4}
           playsInline={true}
           autoPlay={true}
           muted={true}
           loop={true}
         />
       </VideoSection>
-      
+      <ContentSection>
+        <CenteredTitle>What is DevSoc?</CenteredTitle>
+      </ContentSection>
     </DefaultLayout>
   );
 };
