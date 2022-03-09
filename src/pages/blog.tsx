@@ -3,7 +3,7 @@ import { Link, graphql, PageProps } from "gatsby";
 import { Bio } from "../components/blog/bio";
 import { DefaultLayout } from "../components/layout/default-layout";
 import { SEO } from "../components/shared/seo";
-import { GlobalData } from "../types/global-data/global-data.type";
+import { GlobalData } from "../types/global-data/global-data-type";
 
 
 type IndexProps = PageProps & {

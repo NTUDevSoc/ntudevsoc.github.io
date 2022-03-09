@@ -8,8 +8,8 @@
 import React, { FunctionComponent } from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import { Site } from "../../types/site/site.type"
-import { Meta } from "../../types/metadata/meta.type";
+import { Site } from "../../types/site/site-type"
+import { Meta } from "../../types/metadata/meta-type";
 
 type SEOProps = {
   description?: string;

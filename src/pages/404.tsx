@@ -3,7 +3,7 @@ import { graphql, PageProps } from "gatsby";
 
 import { DefaultLayout } from "../components/layout/default-layout";
 import { SEO } from "../components/shared/seo";
-import { GlobalData } from "../types/global-data/global-data.type";
+import { GlobalData } from "../types/global-data/global-data-type";
 
 type NotFoundProps = PageProps & {
   data: GlobalData;
