@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { graphql, PageProps } from "gatsby";
 
-import { DefaultLayout } from "../components/layout/default-layout.component";
-import { SEO } from "../components/shared/seo.component";
+import { DefaultLayout } from "../components/layout/default-layout";
+import { SEO } from "../components/shared/seo";
 import { GlobalData } from "../types/global-data/global-data.type";
 
 type NotFoundProps = PageProps & {

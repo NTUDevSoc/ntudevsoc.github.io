@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { DefaultLayout } from "../components/layout/default-layout.component";
+import { DefaultLayout } from "../components/layout/default-layout";
 
 const ContactUs: FunctionComponent = () => {
     return (

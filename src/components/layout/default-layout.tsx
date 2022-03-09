@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import styled from "styled-components";
-import { Footer } from "./footer.component";
-import { Header } from "./header.component";
+import { Footer } from "./footer";
+import { Header } from "./header";
 
 type LayoutProps = {
   title: string;

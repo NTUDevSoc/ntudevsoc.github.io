@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
-import { DevSocLogo } from "../shared/devsoc-logo.component";
-import { Navbar, NavLink } from "./header.styles";
+import { DevSocLogo } from "../shared/devsoc-logo";
+import { Navbar, NavLink } from "./header-styles";
 
 export const Header: FunctionComponent = () => {
   return (

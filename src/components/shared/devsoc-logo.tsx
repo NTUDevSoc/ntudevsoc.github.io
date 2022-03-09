@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react"
-import { Logo } from "./devsoc-logo.styles"
+import { Logo } from "./devsoc-logo-styles"
 
 import LogoPng from "../../assets/devsoc-logo.png"
 

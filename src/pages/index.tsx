@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { Link, graphql, PageProps } from "gatsby";
-import { DefaultLayout } from "../components/layout/default-layout.component";
+import { DefaultLayout } from "../components/layout/default-layout";
 import { BackgroundVideo, ContentSection, Subtitle, Title, VideoOverlay, VideoSection } from "./index.styles";
-import { CenteredTitle } from "../components/shared/shared.styles";
+import { CenteredTitle } from "../components/shared/shared-styles";
 
 import WelcomeVideoMp4 from "../assets/welcome-page-video.mp4"
 

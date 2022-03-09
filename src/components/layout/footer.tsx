@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { CenteredFooter } from "./footer.styles";
+import { CenteredFooter } from "./footer-styles";
 
 export const Footer: FunctionComponent = () => {
     return (

@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { Link, graphql, PageProps } from "gatsby";
-import { Bio } from "../components/blog/bio.component";
-import { DefaultLayout } from "../components/layout/default-layout.component";
-import { SEO } from "../components/shared/seo.component";
+import { Bio } from "../components/blog/bio";
+import { DefaultLayout } from "../components/layout/default-layout";
+import { SEO } from "../components/shared/seo";
 import { GlobalData } from "../types/global-data/global-data.type";
 
 
