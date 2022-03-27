@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
-import { Link, graphql, PageProps } from "gatsby";
+import { PageProps } from "gatsby";
 import { DefaultLayout } from "../components/layout/default-layout";
-import { BackgroundVideo, ContentSection, Subtitle, Title, VideoOverlay, VideoSection } from "./index.styles";
-import { CenteredTitle } from "../components/shared/shared-styles";
+import { BackgroundVideo, VideoOverlay, VideoSection } from "./index.styles";
 
 import WelcomeVideoMp4 from "../assets/welcome-page-video.mp4"
+import { Container, Heading, VStack } from '@chakra-ui/react'
 
 type IndexProps = PageProps;
 
@@ -20,13 +20,24 @@ const Index: FunctionComponent<IndexProps> = () => {
           loop={true}
         />
         <VideoOverlay>
-          <Title>The Developer's Society</Title>
-          <Subtitle>Nottingham Trent University</Subtitle>
+          <VStack spacing='1rem'>
+            <Heading as='h1' size='3xl' color='white'>
+              The Developer's Society
+            </Heading>
+            <Heading as='h6' size='md' color='white'>
+              Nottingham Trent University
+            </Heading>
+          </VStack>
         </VideoOverlay>
       </VideoSection>
-      <ContentSection>
-        <CenteredTitle>What is DevSoc?</CenteredTitle>
-      </ContentSection>
+      <Container maxWidth='container.md' marginY='1rem'>
+        <VStack spacing='1rem'>
+          <Heading as='h3' size='lg' color='black'>
+            What is DevSoc?
+          </Heading>
+
+        </VStack>
+      </Container>
     </DefaultLayout>
   );
 };
