@@ -8,7 +8,7 @@
 import React, { FunctionComponent } from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import { Site } from "../../types/site/site-type"
+import { Site } from "../../types/site/site-type";
 import { Meta } from "../../types/metadata/meta-type";
 
 type SEOProps = {
@@ -16,10 +16,15 @@ type SEOProps = {
   lang?: string;
   meta?: Array<Meta>;
   title: string;
-}
+};
 
-export const SEO: FunctionComponent<SEOProps> = ({ description, lang, meta, title }) => {
-  const { site } : { site: Site } = useStaticQuery(
+export const SEO: FunctionComponent<SEOProps> = ({
+  description,
+  lang,
+  meta,
+  title,
+}) => {
+  const { site }: { site: Site } = useStaticQuery(
     graphql`
       query {
         site {
@@ -36,7 +41,7 @@ export const SEO: FunctionComponent<SEOProps> = ({ description, lang, meta, titl
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = site.siteMetadata?.title || '';
+  const defaultTitle = site.siteMetadata?.title || "";
 
   let metadata = [
     {

@@ -5,7 +5,6 @@ import { DefaultLayout } from "../components/layout/default-layout";
 import { SEO } from "../components/shared/seo";
 import { GlobalData } from "../types/global-data/global-data-type";
 
-
 type IndexProps = PageProps & {
   data: GlobalData;
 };

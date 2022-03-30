@@ -1,24 +1,23 @@
+import { Box, ChakraProvider } from '@chakra-ui/react'
 import React, { FunctionComponent } from "react";
-import styled from "styled-components";
 import { Footer } from "./footer";
 import { Header } from "./header";
+import { theme } from '../../theme'
+import { SEO } from '../shared/seo'
 
-type LayoutProps = {
-  title: string;
-};
+export interface DefaultLayoutProps {
+  title: string
+}
 
-const Root = styled.div({
-  fontFamily: "'Open Sans', sans-serif"
-});
-
-export const DefaultLayout: FunctionComponent<LayoutProps> = ({
-  children,
-}) => {
+export const DefaultLayout: FunctionComponent<DefaultLayoutProps> = ({ title, children }) => {
   return (
-    <Root>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </Root>
+    <ChakraProvider theme={theme}>
+      <SEO title={title} />
+      <Box fontFamily="'Open Sans', sans-serif">
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </Box>
+    </ChakraProvider>
   );
 };

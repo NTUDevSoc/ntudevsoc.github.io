@@ -1,10 +1,8 @@
-import React, { FunctionComponent } from "react"
-import { Logo } from "./devsoc-logo-styles"
+import React, { FunctionComponent } from "react";
+import { Image } from '@chakra-ui/react'
 
-import LogoPng from "../../assets/devsoc-logo.png"
+import LogoPng from "../../assets/devsoc-logo.png";
 
 export const DevSocLogo: FunctionComponent = () => {
-    return (
-        <Logo src={LogoPng} />
-    )
-}
+  return <Image margin='0.5rem' height='100%' src={LogoPng} />;
+};

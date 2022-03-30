@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `The Developer's Society`,
-    subTitle: `Nottingham Trent University`,
+    title: `NTU Developer's Society`,
+    subTitle: `We're the developer's society at Nottingham Trent University, based in MAE124.`,
     author: {
       name: `NTU Developer's Society`,
       summary: `We're the developer's society at Nottingham Trent University, based in MAE124.`,
@@ -123,7 +123,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: '@chakra-ui/gatsby-plugin',
+      resolve: "@chakra-ui/gatsby-plugin",
       options: {
         resetCSS: true,
         isUsingColorMode: true,
