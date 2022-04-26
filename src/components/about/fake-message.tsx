@@ -46,8 +46,6 @@ const getColor = (from: FakeMessageProps["from"]): string => {
       return theme.colors.devsoc.primary;
     case "student":
       return theme.colors.pink['500'];
-    default:
-      return theme.colors.pink['500'];
   }
 };
 
@@ -56,8 +54,6 @@ const getHeading = (from: FakeMessageProps["from"]): string => {
     case "committee":
       return "DEVS0C_Committee";
     case "student":
-      return "C00lKiD123";
-    default:
       return "C00lKiD123";
   }
 };

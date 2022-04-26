@@ -1,14 +1,14 @@
-import React, { FunctionComponent } from "react";
-import { PageProps } from "gatsby";
-import { DefaultLayout } from "../components/layout/default-layout";
-import { BackgroundVideo, VideoOverlay, VideoSection } from "./index.styles";
-
-import WelcomeVideoMp4 from "../assets/welcome-page-video.mp4";
-import { Container, Flex, Heading, Text, VStack } from "@chakra-ui/react";
-import { FakeMessage } from "../components/about/fake-message";
+import React, { FunctionComponent } from "react"
+import { PageProps } from "gatsby"
+import { DefaultLayout } from "../components/layout/default-layout"
+import { Heading, VStack } from "@chakra-ui/react"
 import { AboutDevSoc } from '../components/about/about-devsoc'
+import { Committee } from '../components/committee/committee'
+import { BackgroundVideo, VideoOverlay, VideoSection } from '../components/background-video/background-video-styles'
 
-type IndexProps = PageProps;
+import WelcomeVideoMp4 from "../../content/assets/welcome-page-video.mp4"
+
+type IndexProps = PageProps
 
 const Index: FunctionComponent<IndexProps> = () => {
   return (
@@ -34,9 +34,10 @@ const Index: FunctionComponent<IndexProps> = () => {
       </VideoSection>
       <VStack>
         <AboutDevSoc />
+        <Committee />
       </VStack>
     </DefaultLayout>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
