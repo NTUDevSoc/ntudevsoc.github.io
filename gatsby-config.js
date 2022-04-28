@@ -46,7 +46,6 @@ module.exports = {
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
         ],
       },
     },
@@ -73,6 +72,7 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.nodes.map(node => {
                 return Object.assign({}, node.frontmatter, {
+                  title: node.frontmatter.title,
                   description: node.excerpt,
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
@@ -101,6 +101,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
+            title: "DevSoc Blog RSS Feed"
           },
         ],
       },
