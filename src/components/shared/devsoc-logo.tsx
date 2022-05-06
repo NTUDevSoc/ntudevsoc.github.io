@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import { Image } from '@chakra-ui/react'
 
 import LogoPng from "../../../content/assets/devsoc-logo.png";

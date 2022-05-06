@@ -1,8 +1,9 @@
-import { chakra, Flex, Link } from '@chakra-ui/react'
-import React, { FunctionComponent } from "react";
+import { chakra, Flex } from '@chakra-ui/react'
+import { FunctionComponent } from "react";
 import { DevSocLogo } from "../shared/devsoc-logo";
 import { lighten } from "polished";
 import { theme} from '../../theme'
+import { Link } from 'gatsby'
 
 export const Header: FunctionComponent = () => {
   return (
@@ -10,9 +11,8 @@ export const Header: FunctionComponent = () => {
       <DevSocLogo />
       <NavLink to="/">Home</NavLink>
       <NavLink to="/blog">Blog</NavLink>
-      <NavLink to="/join-us">Join Us</NavLink>
-      <NavLink to="/about">About</NavLink>
       <NavLink to="/contact">Contact</NavLink>
+      <NavLink to="https://discord.gg/JrPpeWQ">Join Us</NavLink>
       <NavLink to="/archive">Archives</NavLink>
     </Flex>
   );

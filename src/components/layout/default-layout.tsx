@@ -1,5 +1,5 @@
 import { Box, ChakraProvider } from '@chakra-ui/react'
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import { Footer } from "./footer";
 import { Header } from "./header";
 import { theme } from '../../theme'

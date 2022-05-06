@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import { Link, graphql, PageProps } from "gatsby";
 
 import { Bio } from "../components/blog/bio";

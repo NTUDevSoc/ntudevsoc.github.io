@@ -1,11 +1,11 @@
 import { Container, VStack, Heading, Text } from '@chakra-ui/react'
-import React, { FunctionComponent, VoidFunctionComponent } from 'react'
+import { FunctionComponent, VoidFunctionComponent } from 'react'
 import { FakeMessage } from './fake-message'
 
 export const AboutDevSoc: VoidFunctionComponent = () => {
   return (
-    <Container maxWidth="container.lg" marginY="1rem">
-      <VStack spacing="1rem">
+    <Container maxWidth="container.lg">
+      <VStack spacing="1.5rem">
         <Heading as="h3" size="lg" color="black">
           What is DevSoc?
         </Heading>

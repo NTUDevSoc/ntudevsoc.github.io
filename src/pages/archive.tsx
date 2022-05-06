@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import { DefaultLayout } from "../components/layout/default-layout";
 
 const Archive: FunctionComponent = () => {

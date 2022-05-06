@@ -1,5 +1,5 @@
 import { Heading, Text, VStack } from '@chakra-ui/react'
-import React, { VoidFunctionComponent } from 'react'
+import { VoidFunctionComponent } from 'react'
 import { Card } from '../shared/card'
 import { AvatarImage, ProfileLink } from './committee-member-styles'
 

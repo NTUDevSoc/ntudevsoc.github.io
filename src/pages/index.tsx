@@ -1,7 +1,7 @@
-import React, { FunctionComponent } from "react"
+import { FunctionComponent } from "react"
 import { PageProps } from "gatsby"
 import { DefaultLayout } from "../components/layout/default-layout"
-import { Heading, VStack } from "@chakra-ui/react"
+import { Container, Heading, VStack } from "@chakra-ui/react"
 import { AboutDevSoc } from '../components/about/about-devsoc'
 import { Committee } from '../components/committee/committee'
 import { BackgroundVideo, VideoOverlay, VideoSection } from '../components/background-video/background-video-styles'
@@ -32,7 +32,7 @@ const Index: FunctionComponent<IndexProps> = () => {
           </VStack>
         </VideoOverlay>
       </VideoSection>
-      <VStack>
+      <VStack spacing='2rem' marginY='2rem'>
         <AboutDevSoc />
         <Committee />
       </VStack>

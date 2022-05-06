@@ -1,7 +1,7 @@
 import { Container, Flex, Grid, GridItem, Heading, HStack, VStack } from "@chakra-ui/react";
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, {
+import {
   FunctionComponent,
   useMemo,
 } from "react";

@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react'
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 
 export const Footer: FunctionComponent = () => {
   return (

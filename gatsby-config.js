@@ -130,5 +130,6 @@ module.exports = {
         isUsingColorMode: true,
       },
     },
+    `gatsby-plugin-provide-react`
   ],
 };
