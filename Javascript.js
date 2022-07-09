@@ -6,6 +6,10 @@ const codeStrings = [
   `Game`,
 ]
 
+function showSeason(item) {
+  document.getElementById("dropdownMenu1").innerHTML = item.innerHTML;
+}
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }

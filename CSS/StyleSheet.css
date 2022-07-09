@@ -77,6 +77,18 @@ header .overlay {
   z-index: 1;
 }
 
+.dnd-bg {
+  background-color: black;
+}
+
+.dnd-dropdown{
+  border: 5px solid;
+}
+
+.dnd-menu button{
+  color: white;
+}
+
 @media (max-width:540px) {
   .header-title {
     font-size: 50px;
