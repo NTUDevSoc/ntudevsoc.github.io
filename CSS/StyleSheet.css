@@ -77,6 +77,10 @@ header .overlay {
   z-index: 1;
 }
 
+.dnd-content {
+  color: white;
+}
+
 .dnd-bg {
   background-color: black;
 }

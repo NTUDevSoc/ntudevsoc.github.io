@@ -8,6 +8,42 @@ const codeStrings = [
 
 function showSeason(item) {
   document.getElementById("dropdownMenu1").innerHTML = item.innerHTML;
+  showData();
+}
+
+function showData(){
+  let data = [
+    {title: 'Episode 1', description: 'Description of episode 1'},
+    {title: 'Episode 2', description: 'Description of episode 2'},
+    {title: 'Episode 3', description: 'Description of episode 3 but made longer to see how it effects the layout. This should be long enough.'},
+  ]
+  
+  data.forEach(res => {
+    let column_div = document.createElement("div");
+    column_div.className="col-lg-3";
+
+    let episode_card = document.createElement("div");
+    episode_card.className="card";
+    episode_card.innerHTML =
+    `
+      <img class="card-img-top" src="" alt="">
+
+      <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+              ${res.title}
+          </p>
+          <p class="card-text">
+            ${res.description}
+          </p>
+      </p>
+      </div>/
+  `
+  column_div.appendChild(episode_card);
+  
+  let container = document.querySelector("#container");
+  container.appendChild(column_div);
+  });
 }
 
 function sleep(ms) {
