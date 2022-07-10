@@ -18,6 +18,14 @@ function showData(){
     {title: 'Episode 3', description: 'Description of episode 3 but made longer to see how it effects the layout. This should be long enough.'},
   ]
   
+  const row = document.getElementById('row-of-cards');
+    if (row !== null) row.remove();
+  
+  let row_div = document.createElement("div");
+  row_div.className="row";
+  row_div.id = "row-of-cards" 
+  row_div.style.cssText="color: black;"
+
   data.forEach(res => {
     let column_div = document.createElement("div");
     column_div.className="col-lg-3";
@@ -36,13 +44,13 @@ function showData(){
           <p class="card-text">
             ${res.description}
           </p>
-      </p>
       </div>/
   `
+  row_div.appendChild(column_div);
   column_div.appendChild(episode_card);
-  
+
   let container = document.querySelector("#container");
-  container.appendChild(column_div);
+  container.appendChild(row_div);
   });
 }
 
