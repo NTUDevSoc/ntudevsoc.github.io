@@ -79,6 +79,7 @@ header .overlay {
 
 .dnd-content {
   color: white;
+  padding-left: 25px;
 }
 
 .dnd-bg {
@@ -101,7 +102,7 @@ header .overlay {
 }
 
 .custom-container {
-  padding-left: 50px;
+  padding-left: 25px;
   padding-right: 50px;
 }
 

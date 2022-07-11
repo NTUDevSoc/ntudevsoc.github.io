@@ -8,18 +8,17 @@ const codeStrings = [
 
 function showSeason(item) {
   document.getElementById("dropdownMenu1").innerHTML = item.innerHTML;
-  showData();
+  displaySeasonContent();
 }
 
-function getSelectedSeason() {
+function getSelectedSeasonNumber() {
   const season_title = document.getElementById("dropdownMenu1").innerHTML
-  let season_number = season_title.split(":")[0]
-  season_number = season_number.replace(/\s+/g, '')
-  return season_number
+  const season_number = season_title.split(":")[0]
+  return season_number.replace(/\s+/g, '')
 }
 
-function readData(){
-  const season_number = getSelectedSeason();
+function getSeasonContent() {
+  const season_number = getSelectedSeasonNumber();
   const path = "EpisodeData/" + season_number + ".json"
   return fetch(path).then(function(response) {
     return response.json();
@@ -28,26 +27,25 @@ function readData(){
   });
 }
 
-async function showData(){
-
-  let data = await readData() // This returns what looks to be a JSON array
-
+function clearEpisodes() {
   const row = document.getElementById('row-of-cards');
-    if (row !== null) row.remove();
-  
-  let row_div = document.createElement("div");
+  if (row !== null) row.remove();  
+}
+
+async function displaySeasonContent(){
+  clearEpisodes();
+  const row_div = document.createElement("div");
   row_div.className="row";
   row_div.id = "row-of-cards" 
   row_div.style.cssText="color: black;"
 
+  const data = await getSeasonContent();
   data.forEach(res => {
-    let column_div = document.createElement("div");
+    const column_div = document.createElement("div");
     column_div.className="col-lg-3 col-md-6";
-
-    let episode_card = document.createElement("div");
-    episode_card.className="dnd-card my-5";
-    episode_card.innerHTML =
+    column_div.innerHTML =
     `
+    <div class="dnd-card my-5">
       <img class="card-img-top" src="${res.thumbnail}" alt="thumbnail">
 
       <div class="card-body">
@@ -56,12 +54,12 @@ async function showData(){
             ${res.description}
           </p>
       </div>
-  `
-  row_div.appendChild(column_div);
-  column_div.appendChild(episode_card);
+    </div>
+    `
+    row_div.appendChild(column_div);
 
-  let container = document.querySelector("#container");
-  container.appendChild(row_div);
+    const container = document.querySelector("#container");
+    container.appendChild(row_div);
   });
 }
 
