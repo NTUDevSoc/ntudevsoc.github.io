@@ -29,7 +29,6 @@ function readData(){
 }
 
 async function showData(){
-
   let data = await readData() // This returns what looks to be a JSON array
 
   const row = document.getElementById('row-of-cards');
@@ -42,13 +41,13 @@ async function showData(){
 
   data.forEach(res => {
     let column_div = document.createElement("div");
-    column_div.className="col-lg-3";
+    column_div.className="col-lg-3 col-md-6";
 
     let episode_card = document.createElement("div");
     episode_card.className="card dnd-card my-5";
     episode_card.innerHTML =
     `
-      <img class="card-img-top" src="${res.thumbnail}" alt="">
+      <img class="card-img-top" src="${res.thumbnail}" alt="thumbnail">
 
       <div class="card-body">
           <h5 class="card-title">${res.episodeNumber}. ${res.title}</h5>

@@ -2,21 +2,25 @@
   {
     "episodeNumber": 1,
     "title": "Episode 1",
-    "description": "Description 1"
+    "description": "Description 1",
+    "thumbnail": "Images/JarkJuskrat.png"
   },
   {
     "episodeNumber": 2,
     "title": "Episode 2",
-    "description": "Description 2"
+    "description": "Description 2",
+    "thumbnail": "Images/AgentSkelly2.png"
   },
   {
     "episodeNumber": 3,
     "title": "Episode 3",
-    "description": "Description 3"
+    "description": "Description 3",
+    "thumbnail": "Images/Karen.png"
   },
   {
     "episodeNumber": 4,
     "title": "Episode 4",
-    "description": "Description 4 but made longer to see how the cards scale in size. Description 4 but made longer to see how the cards scale in size."
+    "description": "Description 4 but made longer to see how the cards scale in size. Description 4 but made longer to see how the cards scale in size.",
+    "thumbnail": "Images/AgentCooper.png"
   }
 ]
