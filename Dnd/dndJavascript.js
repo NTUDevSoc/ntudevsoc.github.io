@@ -42,6 +42,7 @@ function showSeason(item) {
             <h5 class="card-title">${res.episodeNumber}. ${res.title}</h5>
             <p class="card-text">${res.description} </p>
         </div>
+        <a href="${res.link}" class="stretched-link"></a>
       </div>
       `
       row_div.appendChild(column_div);

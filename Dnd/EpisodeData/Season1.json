@@ -3,24 +3,28 @@
     "episodeNumber": 1,
     "title": "The Claw of Dino",
     "description": "The inaugaral episode of DevSoc and Dragons. A team of students from Snottingham come together and embark on a quest to retrieve the claw of Dino on behalf of a new found ally Jark, an employee of a start-up company known as DevCorp.",
-    "thumbnail": "Images/JarkJuskrat.png"
+    "thumbnail": "Images/JarkJuskrat.png",
+    "link": "http://127.0.0.1:5501/Dnd/Dnd.html"
   },
   {
     "episodeNumber": 2,
     "title": "The Ancient Tome",
     "description": "After retreiving the claw of Dino, the team set off to the University of Snottingham in search of the ancient tome. Fortunately for the team, Jark knows a bard who may hold the secrets to finding what they seek.",
-    "thumbnail": "Images/AgentSkelly2.png"
+    "thumbnail": "Images/AgentSkelly2.png",
+    "link": "https://youtu.be/xbDcuPAI6tY"
   },
   {
     "episodeNumber": 3,
     "title": "The Seeds of Death",
     "description": "Delving into the haunted ruins in CliffTonne the team heads to Morons to find the seeds of death. Not everything is as it seems however as the secrets of Morons are revealed.",
-    "thumbnail": "Images/Karen.png"
+    "thumbnail": "Images/Karen.png",
+    "link": "https://youtu.be/0mSgM1BxCbw"
   },
   {
     "episodeNumber": 4,
     "title": "The Prophecy",
     "description": "An ancient evil is awoken in the heart of Snottingham, putting the fate of the world at risk. Destiny may be on our heroes side as the team must face their greatest battle yet to fulfill an ancient prophecy.",
-    "thumbnail": "Images/AgentCooper.png"
+    "thumbnail": "Images/AgentCooper.png",
+    "link": "https://youtu.be/cTsgrVUsNMA"
   }
 ]
