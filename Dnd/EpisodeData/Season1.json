@@ -1,0 +1,22 @@
+[
+  {
+    "episodeNumber": 1,
+    "title": "Episode 1",
+    "description": "Description 1"
+  },
+  {
+    "episodeNumber": 2,
+    "title": "Episode 2",
+    "description": "Description 2"
+  },
+  {
+    "episodeNumber": 3,
+    "title": "Episode 3",
+    "description": "Description 3"
+  },
+  {
+    "episodeNumber": 4,
+    "title": "Episode 4",
+    "description": "Description 4 but made longer to see how the cards scale in size. Description 4 but made longer to see how the cards scale in size."
+  }
+]

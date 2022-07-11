@@ -11,13 +11,18 @@ function showSeason(item) {
   showData();
 }
 
-function showData(){
-  let data = [
-    {title: 'Episode 1', description: 'Description of episode 1'},
-    {title: 'Episode 2', description: 'Description of episode 2'},
-    {title: 'Episode 3', description: 'Description of episode 3 but made longer to see how it effects the layout. This should be long enough.'},
-  ]
-  
+function readData(){
+  return fetch("EpisodeData/Season1.json").then(function(response) {
+    return response.json();
+  }).then(function(json) {
+    return json;
+  });
+}
+
+async function showData(){
+
+  let data = await readData() // This returns what looks to be a JSON array
+
   const row = document.getElementById('row-of-cards');
     if (row !== null) row.remove();
   
@@ -31,20 +36,17 @@ function showData(){
     column_div.className="col-lg-3";
 
     let episode_card = document.createElement("div");
-    episode_card.className="card";
+    episode_card.className="card my-5";
     episode_card.innerHTML =
     `
       <img class="card-img-top" src="" alt="">
 
       <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-              ${res.title}
-          </p>
+          <h5 class="card-title">${res.episodeNumber}.${res.title}</h5>
           <p class="card-text">
             ${res.description}
           </p>
-      </div>/
+      </div>
   `
   row_div.appendChild(column_div);
   column_div.appendChild(episode_card);

@@ -93,6 +93,11 @@ header .overlay {
   color: white;
 }
 
+.custom-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 @media (max-width:540px) {
   .header-title {
     font-size: 50px;
