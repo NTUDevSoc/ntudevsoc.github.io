@@ -48,10 +48,10 @@ async function showData(){
     episode_card.className="card dnd-card my-5";
     episode_card.innerHTML =
     `
-      <img class="card-img-top" src="" alt="">
+      <img class="card-img-top" src="${res.thumbnail}" alt="">
 
       <div class="card-body">
-          <h5 class="card-title">${res.episodeNumber}.${res.title}</h5>
+          <h5 class="card-title">${res.episodeNumber}. ${res.title}</h5>
           <p class="card-text">
             ${res.description}
           </p>

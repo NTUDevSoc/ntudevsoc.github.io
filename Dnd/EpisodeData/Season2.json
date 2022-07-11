@@ -1,22 +1,26 @@
 [
   {
     "episodeNumber": 1,
-    "title": "S2 Episode 1",
-    "description": "Description 1"
+    "title": "Unfamiliar Territory",
+    "description": "Struck with amnesia a group of adventurers find themselves stuck in the underworld as Death has decided to collect some souls a little early. Determined to speak with Death and return to their realm, they enlist the help of a new found friend, Mok.",
+    "thumbnail": "Images/Mok_Token.png"
   },
   {
     "episodeNumber": 2,
-    "title": "S2 Episode 2",
-    "description": "Description 2"
+    "title": "Friend or Foe",
+    "description": "After conning their way through the 'interview' the gang must face the dreaded Watcher's Camp. With the sands of time slowly beginning to slip away will a dead God, a Leonin and thousands of undead zombies reveal themselves to be friends or foes? ",
+    "thumbnail": "Images/Mok_Token.png"
   },
   {
     "episodeNumber": 3,
-    "title": "S2 Episode 3",
-    "description": "Description 3"
+    "title": "Fatal Mistakes",
+    "description": "Fleeing the wrath of the mighty Firestar forces the gang to accept the help of the shadow. Tensions rise as Patro goes missing and Mok's impatience becomes more apparent. Meanwhile, the Lady of Saxabone makes an irresistible offer that might just shift the balance of the underworld. ",
+    "thumbnail": "Images/DND-LOGO.png"
   },
   {
     "episodeNumber": 4,
-    "title": "S2 Episode 4",
-    "description": "Description 4 but made longer to see how the cards scale in size. Description 4 but made longer to see how the cards scale in size."
+    "title": "The Resurrection ",
+    "description": "Coming soon...",
+    "thumbnail": "Images/DND-LOGO.png"
   }
 ]
