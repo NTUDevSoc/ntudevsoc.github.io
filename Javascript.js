@@ -11,8 +11,17 @@ function showSeason(item) {
   showData();
 }
 
+function getSelectedSeason() {
+  const season_title = document.getElementById("dropdownMenu1").innerHTML
+  let season_number = season_title.split(":")[0]
+  season_number = season_number.replace(/\s+/g, '')
+  return season_number
+}
+
 function readData(){
-  return fetch("EpisodeData/Season1.json").then(function(response) {
+  const season_number = getSelectedSeason();
+  const path = "EpisodeData/" + season_number + ".json"
+  return fetch(path).then(function(response) {
     return response.json();
   }).then(function(json) {
     return json;
@@ -36,7 +45,7 @@ async function showData(){
     column_div.className="col-lg-3";
 
     let episode_card = document.createElement("div");
-    episode_card.className="card my-5";
+    episode_card.className="card dnd-card my-5";
     episode_card.innerHTML =
     `
       <img class="card-img-top" src="" alt="">

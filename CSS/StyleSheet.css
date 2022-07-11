@@ -85,11 +85,16 @@ header .overlay {
   background-color: black;
 }
 
-.dnd-dropdown{
+.dnd-dropdown {
   border: 5px solid;
 }
 
-.dnd-menu button{
+.dnd-menu button {
+  color: white;
+}
+
+.dnd-card {
+  background-color: black;
   color: white;
 }
 
