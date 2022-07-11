@@ -1,7 +1,7 @@
 [
   {
     "episodeNumber": 1,
-    "title": "Episode 1",
+    "title": "Welcome to Snottingham",
     "description": "Description 1",
     "thumbnail": "Images/JarkJuskrat.png"
   },
@@ -19,7 +19,7 @@
   },
   {
     "episodeNumber": 4,
-    "title": "Episode 4",
+    "title": "The Prophecy",
     "description": "Description 4 but made longer to see how the cards scale in size. Description 4 but made longer to see how the cards scale in size.",
     "thumbnail": "Images/AgentCooper.png"
   }
