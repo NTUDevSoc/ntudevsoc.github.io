@@ -14,8 +14,6 @@ function showSeason(item) {
     const path = "EpisodeData/" + season_number + ".json"
     return fetch(path).then(function(response) {
       return response.json();
-    }).then(function(json) {
-      return json;
     });
   }
   
@@ -42,9 +40,7 @@ function showSeason(item) {
   
         <div class="card-body">
             <h5 class="card-title">${res.episodeNumber}. ${res.title}</h5>
-            <p class="card-text">
-              ${res.description}
-            </p>
+            <p class="card-text">${res.description} </p>
         </div>
       </div>
       `
