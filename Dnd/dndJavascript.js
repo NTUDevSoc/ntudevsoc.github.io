@@ -1,5 +1,6 @@
 function showSeason(item) {
     document.getElementById("dropdownMenu1").innerHTML = item.innerHTML;
+    clearEpisodes();
     displaySeasonContent();
   }
   
@@ -23,7 +24,6 @@ function showSeason(item) {
   }
   
   async function displaySeasonContent(){
-    clearEpisodes();
     const row_div = document.createElement("div");
     row_div.className="row";
     row_div.id = "row-of-cards" 
