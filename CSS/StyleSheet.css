@@ -9,7 +9,7 @@ html, body {
   background-color:#050f1b;
 }
 
-.navbar a {
+.devsoc-nav-item {
   color:white;
   float: left;
   display: block;
@@ -17,6 +17,16 @@ html, body {
   text-decoration: none;
   font-size: 18px;
   font-family: 'Signika', sans-serif;
+}
+
+.devsoc-nav-logo {
+  color:white;
+  float: left;
+  display: block;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size:28px;
+  font-family: 'Open Sans', Sans-Serif;
 }
 
 .navbar a:hover {
@@ -75,6 +85,35 @@ header .overlay {
   background-color: black;
   opacity: 0.4;
   z-index: 1;
+}
+
+.dnd-content {
+  color: white;
+  padding-left: 25px;
+}
+
+.dnd-bg {
+  background-color: black;
+}
+
+.dnd-dropdown {
+  border: 5px solid;
+  background-color: black;
+  font-size: 25px;
+}
+
+.dnd-menu button {
+  color: white;
+}
+
+.dnd-card {
+  background-color: black;
+  color: white;
+}
+
+.padding-container {
+  padding-left: 25px;
+  padding-right: 50px;
 }
 
 @media (max-width:540px) {
