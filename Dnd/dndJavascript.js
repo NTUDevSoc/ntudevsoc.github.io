@@ -1,11 +1,11 @@
 function showSeason(item) {
-    document.getElementById("dropdownMenu1").innerHTML = item.innerHTML;
+    document.getElementById("seasonDropDownMenu").innerHTML = item.innerHTML;
     clearEpisodes();
     displaySeasonContent();
   }
   
   function getSelectedSeasonNumber() {
-    const season_title = document.getElementById("dropdownMenu1").innerHTML
+    const season_title = document.getElementById("seasonDropDownMenu").innerHTML
     const season_number = season_title.split(":")[0]
     return season_number.replace(/\s+/g, '')
   }
