@@ -112,8 +112,8 @@ header .overlay {
 }
 
 .padding-container {
-  padding-left: 25px;
-  padding-right: 50px;
+  padding-left: 2.5rem;
+  padding-right: 5.0rem;
 }
 
 @media (max-width:540px) {
