@@ -19,23 +19,18 @@ function showSeason(item) {
   }
   
   function clearEpisodes() {
-    const row = document.getElementById('row-of-cards');
-    if (row !== null) row.remove();  
+    const episodes = document.querySelectorAll('[id=dnd-episode]');
+    episodes.forEach(episode => episode.remove())
   }
   
   async function displaySeasonContent(){
-    const row_div = document.createElement("div");
-    row_div.className="row";
-    row_div.id = "row-of-cards" 
-    row_div.style.cssText="color: black;"
-  
     const data = await getSeasonContent();
     data.forEach(res => {
       const column_div = document.createElement("div");
       column_div.className="col-xl-3 col-lg-4 col-md-6";
       column_div.innerHTML =
       `
-      <div class="dnd-card my-5">
+      <div class="dnd-card my-5" id="dnd-episode">
         <img class="card-img-top" src="${res.thumbnail}" alt="thumbnail">
   
         <div class="card-body">
@@ -45,9 +40,7 @@ function showSeason(item) {
         <a href="${res.link}" class="stretched-link" target="_"></a>
       </div>
       `
-      row_div.appendChild(column_div);
-  
-      const container = document.querySelector("#container");
-      container.appendChild(row_div);
+      const container = document.getElementById("row-of-cards");
+      container.appendChild(column_div);
     });
   }
