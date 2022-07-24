@@ -28,13 +28,11 @@
   }
 }
 
-
 @media (max-width:600px) {
   .dnd-title {
     font-size: 55px;
   }
 }
-
 
 .padding-container {
   padding-left: 0.5rem;

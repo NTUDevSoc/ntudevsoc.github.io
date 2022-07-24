@@ -1,7 +1,11 @@
-function showSeason(item) {
-    document.getElementById("seasonDropDownMenu").innerHTML = item.innerHTML;
-    clearEpisodes();
-    displaySeasonContent();
+  async function showSeason(item) {
+    if (item) {
+      document.getElementById("seasonDropDownMenu").innerHTML = item.innerHTML;
+      clearEpisodes();
+    }
+    const season_number = getSelectedSeasonNumber();
+    const episodeData = await getSeasonContent(season_number);
+    displaySeasonContent(episodeData);
   }
 
   function clearEpisodes() {
@@ -15,23 +19,22 @@ function showSeason(item) {
     return season_number.replace(/\s+/g, '')
   }
   
-  function getSeasonContent() {
-    const season_number = getSelectedSeasonNumber();
+  function getSeasonContent(season_number) {
     const path = "EpisodeData/" + season_number + ".json"
     return fetch(path).then(function(response) {
       return response.json();
     });
   }
   
-  async function displaySeasonContent(){
-    const episodeData = await getSeasonContent();
+  function displaySeasonContent(episodeData){
+    const container = document.getElementById("row-of-cards");
     episodeData.forEach(episode => {
       const column_div = document.createElement("div");
       column_div.className="col-xl-3 col-lg-4 col-md-6";
       column_div.innerHTML =
       `
       <div class="dnd-card my-5" id="dnd-episode">
-        <img class="card-img-top" src="${episode.thumbnail}" alt="thumbnail">
+        <img class="card-img-top" src="${episode.thumbnail}" alt="Episode ${episode.episodeNumber} thumbnail">
   
         <div class="card-body">
             <h5 class="card-title">${episode.episodeNumber}. ${episode.title}</h5>
@@ -40,7 +43,6 @@ function showSeason(item) {
         <a href="${episode.link}" class="stretched-link" target="_"></a>
       </div>
       `
-      const container = document.getElementById("row-of-cards");
       container.appendChild(column_div);
     });
   }
