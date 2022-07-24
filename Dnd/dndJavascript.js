@@ -3,7 +3,7 @@
       document.getElementById("seasonDropDownMenu").innerHTML = item.innerHTML;
       clearEpisodes();
     }
-    const season_number = await getSelectedSeasonNumber();
+    const season_number = getSelectedSeasonNumber();
     const episodeData = await getSeasonContent(season_number);
     displaySeasonContent(episodeData);
   }
@@ -15,7 +15,7 @@
     }
   }
   
-  async function getSelectedSeasonNumber() {
+  function getSelectedSeasonNumber() {
     const season_title = document.getElementById("seasonDropDownMenu").innerHTML
     const season_number = season_title.split(":")[0]
     return season_number.replace(/\s+/g, '')
@@ -23,9 +23,8 @@
   
   async function getSeasonContent(season_number) {
     const path = "EpisodeData/" + season_number + ".json"
-    return fetch(path).then(function(response) {
-      return response.json();
-    });
+    const seasonContent = await fetch(path);
+    return seasonContent.json();
   }
   
   function displaySeasonContent(episodeData){
