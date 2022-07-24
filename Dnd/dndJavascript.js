@@ -33,7 +33,7 @@
       column_div.className="col-xl-3 col-lg-4 col-md-6";
       column_div.innerHTML =
       `
-      <div class="dnd-card my-5" id="dnd-episode">
+      <div class="my-5" id="dnd-episode">
         <img class="card-img-top" src="${episode.thumbnail}" alt="Episode ${episode.episodeNumber} thumbnail">
   
         <div class="card-body">
