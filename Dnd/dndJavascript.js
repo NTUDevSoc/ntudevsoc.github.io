@@ -9,7 +9,7 @@
   }
 
   function clearEpisodes() {
-    const episodes = document.querySelectorAll('[id=dnd-episode]');
+    const episodes = document.querySelectorAll('[id=dnd-column]');
     episodes.forEach(episode => episode.remove())
   }
   
@@ -31,6 +31,7 @@
     episodeData.forEach(episode => {
       const column_div = document.createElement("div");
       column_div.className="col-xl-3 col-lg-4 col-md-6";
+      column_div.id="dnd-column";
       column_div.innerHTML =
       `
       <div class="my-5" id="dnd-episode">
