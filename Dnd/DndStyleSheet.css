@@ -1,0 +1,28 @@
+.dnd-body {
+  background-color: black;
+  color: white;
+}
+
+.dnd-content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.dnd-dropdown {
+  border: 5px solid;
+  font-size: 25px;
+}
+
+.dnd-menu button {
+  color: white;
+}
+
+.dnd-title {
+  font-size: 80px;
+}
+
+@media (max-width:800px) {
+  .dnd-title {
+    font-size: 55px;
+  }
+}
