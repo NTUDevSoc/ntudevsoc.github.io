@@ -9,7 +9,7 @@
   }
 
   function clearEpisodes() {
-    const episodes = document.getElementsByClassName("dnd-column");
+    const episodes = document.getElementsByClassName("dnd-card");
     for (var i = episodes.length-1; i >= 0; i--) {
       episodes[i].remove();
     }
