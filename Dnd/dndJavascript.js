@@ -31,7 +31,7 @@
     const container = document.getElementById("row-of-cards");
     episodeData.forEach(episode => {
       const column_div = document.createElement("div");
-      column_div.className="dnd-column col-xl-3 col-lg-4 col-md-6";
+      column_div.className="card dnd-card col-xl-3 col-lg-4 col-md-6";
       column_div.innerHTML =
       `
       <div class="my-5">
