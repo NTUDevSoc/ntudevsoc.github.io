@@ -9,7 +9,7 @@
   }
 
   function clearEpisodes() {
-    const episodes = document.getElementsByClassName("dnd-column");
+    const episodes = document.getElementsByClassName("dnd-card");
     for (var i = episodes.length-1; i >= 0; i--) {
       episodes[i].remove();
     }
@@ -31,7 +31,7 @@
     const container = document.getElementById("row-of-cards");
     episodeData.forEach(episode => {
       const column_div = document.createElement("div");
-      column_div.className="dnd-column col-xl-3 col-lg-4 col-md-6";
+      column_div.className="card dnd-card col-xl-3 col-lg-4 col-md-6";
       column_div.innerHTML =
       `
       <div class="my-5">
