@@ -42,7 +42,7 @@
                 <ul class="navbar-nav ml-auto">
                     <!-- Page -->
                     <li class="nav-item">
-                        <a class="nav-link devsoc-nav-item" href="home.html">
+                        <a class="nav-link devsoc-nav-item" href="../home.html">
                             <i class="fa fa-fw fa-home" style="color: #fff"></i>
                             Home
                         </a>
@@ -60,12 +60,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link devsoc-nav-item" href="DCHP/introduction.html">
-                            <i class="fa fa-fw fa-code" style="color:#fff"></i> DCHP
+                        <a class="nav-link devsoc-nav-item" href="./introduction.html">
+                            <i class="fa fa-fw fa-code" style="color:#fff"></i>
+                            DCHP++
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link devsoc-nav-item" href="Archive/archive.html">
+                        <a class="nav-link devsoc-nav-item" href="../Archive/archive.html">
                             <i class="fa fa-fw fa-archive" style="color: #fff"></i>
                             Archive
                         </a>
@@ -73,21 +74,33 @@
                 </ul>
             </div>
         </nav>
-        <h1>Introducing DCHP++</h1>
-        <p>
-            We're thrilled to finally be revealing our own programming language, built by DevSoc's finest minds. We've kept this under covers for quite some
-            time, as we've been working on it for years!
-        </p>
-        We'd like to introduce you to DCHP++ (DevCorp Hyper Processing ++)! This is the programming language that's gonna change the world - for the worst better. We've spent months compiling all the worst things about every programming language known to man and computer and shoved it all into DCHP++.
-        <p></p>
-        <h2>Getting Started</h2>
-        <p>
-            If you're interested in giving it a go, you can download it at
-            <a href="./download.html">this link</a>
-            !
-        </p>
-        <p>You can see some sample code below, which shows a very simple addition program.</p>
-        <code-block language="cpp" label="My first program">
+        <div class="container-fluid top-buffer">
+            <div class="row mt-2 mx-4">
+                <div class="col">
+                    <h1>Introducing DCHP++</h1>
+                    <p>
+                        We're thrilled to finally be revealing our own programming language, built by DevSoc's finest minds. We've kept this under covers for quite some
+                    time, as we've been working on it for years!
+                    </p>
+                    <p>
+                        We'd like to introduce you to DCHP++ (DevCorp Hyper Processing ++)! This is the programming language that's gonna change the world - for the worst better. We've spent months compiling all the worst things about every programming language known to man and computer and shoved it all into DCHP++.
+                    </p>
+                </div>
+            </div>
+            <div class="row my-2 mx-4">
+                <div class="col">
+                    <h2>Getting Started</h2>
+                    <p>
+                        If you're interested in giving it a go, you can download it here:
+                    </p>
+                    <a class="btn btn-primary" href="./download.html" role="button">Download</a>
+                </div>
+            </div>
+            <div class="row my-2 mx-4">
+                <div class="col">
+                    <h2>Sample code</h2>
+                    <p>You can see some sample code below, which shows a very simple addition program.</p>
+                    <code-block language="cpp" label="My first program">
 DEFINE int32 main() 
 {
 DECLARE int32 first_number, 
@@ -109,6 +122,22 @@ OUTPUT &lt; 'first_number', " + ", 'second_number', " = ", 'sum'
 
 FINISH 0;
 }
-        </code-block>
+                    </code-block>
+                </div>
+            </div>
+            <div class="row my-2 mx-4">
+                <div class="col">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>No intellisense: need intellisense or autofill? Well sorry, we don't believe in that.</li>
+                        <li>Steep learning curve: worried about the learning curve? Too bad! We haven't bothered to document it at all.</li>
+                        <li>VPC: Want Object Oriented Programming? Well we've got Void Position Coding. What's that? Uh, we haven't got a clue.</li>
+                    </ul>
+                    <p>
+                        Good luck, because that's all the documentation we've got!
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
