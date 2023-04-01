@@ -180,3 +180,9 @@ header .overlay {
 .archive-icon:hover {
   transform: scale(1.15);
 }
+
+.DCHPcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
