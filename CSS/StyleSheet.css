@@ -1,13 +1,50 @@
-/* Base structure */
-
-html, body {
-  height: 100%;
+/* custom css reset */
+html{
+  scroll-behavior: smooth;
 }
+
+* , *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*{
+  font-size: inherit;
+}
+
+html, 
+body{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  
+}
+
+img,
+picture,
+video,
+svg{
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+
+input, button, textarea, select {
+font: inherit;
+}
+
+
+/* Base structure */
 
 /* Customise the Navigation Bar */
 .navbar {
   background-color:#050f1b;
 }
+
 
 .devsoc-nav-item {
   color:white;
@@ -45,6 +82,7 @@ i{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 header {
@@ -52,7 +90,7 @@ header {
   background-color: black;
   height: 75vh;
   min-height: 25rem;
-  width: 100%;
+  /* width: 100%; */
   overflow: hidden;
 }
 
@@ -60,10 +98,10 @@ header video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  /* min-width: 100%; */
+  /* min-height: 100%; */
+  /* width: auto; */
+  /* height: auto; */
   z-index: 0;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -80,8 +118,8 @@ header .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
   background-color: black;
   opacity: 0.4;
   z-index: 1;
