@@ -44,6 +44,18 @@ window.onload = function() {
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
+
+
+  // Auto change current date based on year and month
+  const field = document.getElementById("curAcademicYr");
+  const curDate = (((new Date()).getFullYear()).toString()).slice(-2);
+  // If below september then last year and current year
+  if (new Date().getMonth() < 9) {
+      field.innerHTML += (curDate-1) + " " + curDate;
+  }
+  // If after september then current year then next year
+  else
+      field.innerHTML += curDate + " " + (parseInt(curDate)+1);
 };
 
 
@@ -58,3 +70,11 @@ $('#pending').click(function (e) {
   e.preventDefault()
   $('#messagePending').html('<div class="alert alert-success fade-in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button><strong>Alert:</strong> Event details are pending. Try again later! :)</div>');
   })
+
+
+
+
+async function putCurAcademicYr(){
+    const field = document.getElementById("curAcademicYr");
+    field.innerHTML = (new Date()).slice(-2);
+}
