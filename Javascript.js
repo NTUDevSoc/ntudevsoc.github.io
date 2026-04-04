@@ -115,14 +115,14 @@ async function useJsonData() {
                 ImageContainer.classList.add("row", "mt-4", "mb-4", "mx-4", "justify-content-center");
 
                 const ImageContainer2 = document.createElement("div");
-                ImageContainer2.classList.add("col-lg-4", "my-2")
+                ImageContainer2.classList.add("col-lg-4", "my-2");
 
                 const ImageContainer3 = document.createElement("div");
                 ImageContainer3.classList.add("card", "card-shadow");
 
                 const Picture = document.createElement("img");
-                Picture.classList.add("img-responsive", "rounded-circle");
-                Picture.src = Event.Image;
+                Picture.classList.add("card-img-top");
+                Picture.src = event.Image;
 
                 const CardContainer = document.createElement("div");
                 CardContainer.classList.add("card-body");
@@ -146,6 +146,8 @@ async function useJsonData() {
                 const link = document.createElement("a");
                 link.href = event.Link;
                 link.target = "_blank";
+                link.classList.add("btn", "btn-dark", "float-right");
+                link.textContent = "Details";
 
                 CardContainer.appendChild(Title);
                 CardContainer.appendChild(Description);
@@ -153,7 +155,7 @@ async function useJsonData() {
                 CardContainer.appendChild(Place);
                 CardContainer.appendChild(link);
 
-                ImageContainer.appendChild(Picture);
+                ImageContainer3.appendChild(Picture);
                 ImageContainer3.appendChild(CardContainer);
 
                 ImageContainer2.appendChild(ImageContainer3);
