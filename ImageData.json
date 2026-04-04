@@ -1,0 +1,23 @@
+{
+  "Committee":[
+    {
+      "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s",
+      "Name": "Dev Dino",
+      "Course": "BSc Dooms Day Preper",
+      "About": "Planning world domination",
+      "Link": "<rickroll link when i can be asked to add it>",
+      "ComitteeYr": "2026"
+    }
+  ],
+
+  "Events": [
+    {
+      "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s",
+      "Name": "Planning world domination with Dev Dino & OctoGarth",
+      "About": "We will be going other the steps and planning to inform you on how to plan your first world domindation",
+      "Time": "3:00 am",
+      "Place": "The Void",
+      "Link": "<another rickroll link when i can be asked to add it>"
+    }
+  ]
+}
