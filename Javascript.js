@@ -83,7 +83,6 @@ async function useJsonData() {
 
                 const link = document.createElement("a");
                 link.href = member.Link;
-                link.target = "_blank";
 
                 const ProfileLinkText = document.createElement("h6");
                 ProfileLinkText.textContent = "View Profile";
@@ -145,7 +144,6 @@ async function useJsonData() {
 
                 const link = document.createElement("a");
                 link.href = event.Link;
-                link.target = "_blank";
                 link.classList.add("btn", "btn-dark", "float-right");
                 link.textContent = "Details";
 

@@ -91,6 +91,27 @@ header .overlay {
   .header-title {
     font-size: 50px;
   }
+
+  #imageContainer .media {
+    flex-direction: column;
+  }
+
+  #imageContainer .media .fa-user-circle {
+    display: none;
+  }
+
+  #imageContainer .media-body {
+    text-align: left !important;
+  }
+
+  #imageContainer .media-body .box {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  #imageContainer .list-unstyled {
+    width: 100% !important;
+  }
 }
 
 @media (max-width:300px) {
@@ -185,4 +206,9 @@ header .overlay {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section-spacer {
+  margin-top: 3rem;   /* 48px — adjust as needed */
+  margin-bottom: 3rem;
 }

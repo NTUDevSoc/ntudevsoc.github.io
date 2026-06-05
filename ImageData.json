@@ -18,6 +18,14 @@
       "Time": "3:00 am",
       "Place": "The Void",
       "Link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "Image": "Images/CurrentEvents/no events filler.png",
+      "Name": "NTU HackADuck",
+      "About": "NTU & DevSoc ran hackathon with prizes, sponsers and a good time",
+      "Time": "TBC",
+      "Place": "TBC",
+      "Link": "current event pages/hackathon/Hack-A-Duck.html"
     }
   ]
 }
