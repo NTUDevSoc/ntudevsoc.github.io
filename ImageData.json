@@ -12,12 +12,12 @@
 
   "Events": [
     {
-      "Image": "Images/Profiles/devdino.PNG",
+      "Image": "Images/CurrentEvents/no events filler.png",
       "Name": "no events at the moment",
-      "About": "na",
-      "Time": "na",
-      "Place": "na",
-      "Link": "na"
+      "About": "",
+      "Time": "",
+      "Place": "",
+      "Link": ""
     }
   ]
 }
