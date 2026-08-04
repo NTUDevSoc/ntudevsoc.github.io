@@ -3,29 +3,21 @@
     {
       "Image": "Images/Profiles/devdino.PNG",
       "Name": "Dev Dino",
-      "Course": "BSc Dooms Day Preper",
-      "About": "Planning world domination",
-      "Link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "Course": "BSc Computing Science",
+      "About": "loves gregs and some code",
+      "Link": "",
       "ComitteeYr": "2026"
     }
   ],
 
   "Events": [
     {
-      "Image": "Images/CurrentEvents/firehellscape.jpg",
-      "Name": "Planning world domination with Dev Dino & OctoGarth",
-      "About": "We will be going other the steps and planning to inform you on how to plan your first world domindation",
-      "Time": "3:00 am",
-      "Place": "The Void",
-      "Link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    },
-    {
-      "Image": "Images/CurrentEvents/no events filler.png",
-      "Name": "NTU HackADuck",
-      "About": "NTU & DevSoc ran hackathon with prizes, sponsers and a good time",
-      "Time": "TBC",
-      "Place": "TBC",
-      "Link": "current event pages/hackathon/Hack-A-Duck.html"
+      "Image": "",
+      "Name": "",
+      "About": "",
+      "Time": "",
+      "Place": "",
+      "Link": ""
     }
   ]
 }
