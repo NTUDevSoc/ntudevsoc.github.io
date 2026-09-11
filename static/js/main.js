@@ -35,7 +35,7 @@ async function initRotate(spanElement, period, strings = codeStrings) {
 
 
 async function useJsonData() {
-    fetch("ImageData.json")
+    fetch("/static/data/ImageData.json")
         .then(response => response.json())
         .then(json => {
             // Committee
