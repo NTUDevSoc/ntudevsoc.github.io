@@ -186,12 +186,6 @@ header .overlay {
   background-color: rgb(247, 247, 247);
 }
 
-#more {display: none;}
-
-.moreButton:hover {
-  color: #5e5e5e;
-}
-
 /* Archive Icons */
 /* Socials */
 .archive-icon {
@@ -206,9 +200,4 @@ header .overlay {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.section-spacer {
-  margin-top: 3rem;   /* 48px — adjust as needed */
-  margin-bottom: 3rem;
 }
