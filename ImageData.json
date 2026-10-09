@@ -12,12 +12,12 @@
 
   "Events": [
     {
-      "Image": "Images/CurrentEvents/no events filler.png",
-      "Name": "no events at the moment",
-      "About": "",
-      "Time": "",
-      "Place": "",
-      "Link": ""
+      "Image": "Images/CurrentEvents/CodingWorkshop.png",
+      "Name": "Coding Support & DSA (Data Structure Algoritms) introduction workshop",
+      "About": "Need help with programming or want to improve your problem-solving skills? Drop in for a friendly, beginner-friendly session where you can get help with coding, learn about Data Structures & Algorithms (DSA), explore Big O notation and hash maps, and work through practice problems with support from fellow students. Bring your questions, work on your own code, or learn something new!",
+      "Time": "October 16th, 3pm-6pm",
+      "Place": "MAE 206 - Super Lab",
+      "Link": "https://forms.cloud.microsoft/e/yBX2UWXCgJ"
     }
   ]
 }
