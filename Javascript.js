@@ -53,8 +53,8 @@ async function useJsonData() {
                 const Picture = document.createElement("img");
                 Picture.classList.add("img-responsive", "rounded-circle");
                 Picture.src = member.Image;
-                Picture.width = "90";
-                Picture.height = "90";
+                Picture.style.width = "100px";
+                Picture.style.height = "100px";
 
                 const Name = document.createElement("h2");
                 Name.classList.add("mt-3", "name");
@@ -122,6 +122,10 @@ async function useJsonData() {
                 const Picture = document.createElement("img");
                 Picture.classList.add("card-img-top");
                 Picture.src = event.Image;
+                Picture.style.width = "auto";
+                Picture.style.height = "250px";
+                Picture.style.objectFit = "cover";
+
 
                 const CardContainer = document.createElement("div");
                 CardContainer.classList.add("card-body");
@@ -133,6 +137,7 @@ async function useJsonData() {
                 const Description = document.createElement("p");
                 Description.classList.add("card-text");
                 Description.textContent = event.About;
+                Description.style.whiteSpace = "pre-line";
 
                 const Time = document.createElement("p");
                 Time.classList.add("card-text", "text-right");
