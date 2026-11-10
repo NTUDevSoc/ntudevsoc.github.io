@@ -12,6 +12,25 @@
 
   "Events": [
     {
+      "Image": "Images/CurrentEvents/SocialEvent12Nov.png",
+      "Name": "DevSoc Social",
+      "About": "We will be hosting a social where you are all invited! As well as others such as AI Robotics society and their members.\nThere will be video games, board games and most importantly there will be free pizza for all!\nYou should all definitely come along (even if it is for free food).",
+      "Time": "November 12th, 5pm-7pm",
+      "Place": "pavilion 121 & 122",
+      "Link": "https://forms.cloud.microsoft/e/THUuugtZbi"
+    },
+    {
+      "Image": "Images/CurrentEvents/HackTheTrent.png",
+      "Name": "HackTheTrent",
+      "About": "This will be a 6hr Hackathon (this includes speeches, awards and judging). \nYou can come with a team, find one on the day or do it solo.\nThere will also be free snacks, as that usually entices you all, definitely did for me.",
+      "Time": "November 20th, 2.30pm-9pm",
+      "Place": "pavilion 123",
+      "Link": "https://builderbase.com/event/aws-sbg-ntu-hack-the-trent-with-builderbase"
+    }
+  ],
+
+  "archive-Events":[
+    {
       "Image": "Images/CurrentEvents/CodingWorkshop.png",
       "Name": "Coding Support & DSA (Data Structure Algoritms) introduction workshop",
       "About": "Need help with programming or want to improve your problem-solving skills?\nDrop in for a friendly, beginner-friendly session where you can get help with coding, learn about Data Structures & Algorithms (DSA), explore Big O notation and hash maps, and work through practice problems with support from fellow students.\nBring your questions, work on your own code, or learn something new!\n\nClick the more details button to fill the form!",
