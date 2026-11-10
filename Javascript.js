@@ -106,12 +106,15 @@ async function useJsonData() {
             });
 
             // Events
+            const MainEventContainer = document.getElementById("imageContainer2");
+            MainEventContainer.classList.add("row", "justify-content-center");
+
             json.Events.forEach(event => {
                 console.log(`${event.Name} @ ${event.Time} in ${event.Place}`);
-                const MainEventContainer = document.getElementById("imageContainer2");
 
                 const ImageContainer = document.createElement("div");
                 ImageContainer.classList.add("row", "mt-4", "mb-4", "mx-4", "justify-content-center");
+                ImageContainer.style.width = "100%";
 
                 const ImageContainer2 = document.createElement("div");
                 ImageContainer2.classList.add("col-lg-4", "my-2");
@@ -122,9 +125,10 @@ async function useJsonData() {
                 const Picture = document.createElement("img");
                 Picture.classList.add("card-img-top");
                 Picture.src = event.Image;
-                Picture.style.width = "auto";
-                Picture.style.height = "250px";
+                Picture.style.width = "100%";
+//                Picture.style.height = "250px";
                 Picture.style.objectFit = "cover";
+                Picture.style.background = "#000";
 
 
                 const CardContainer = document.createElement("div");
@@ -163,9 +167,9 @@ async function useJsonData() {
 
                 ImageContainer2.appendChild(ImageContainer3);
 
-                ImageContainer.appendChild(ImageContainer2);
+                //ImageContainer.appendChild(ImageContainer2);
 
-                MainEventContainer.appendChild(ImageContainer);
+                MainEventContainer.appendChild(ImageContainer2);
             });
         })
 }
